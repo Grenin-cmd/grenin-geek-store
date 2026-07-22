@@ -1,79 +1,193 @@
+/*============================================
 
-/* ==========================================
-   GRENIN GEEK STORE
-   Versão 1.0
-========================================== */
+        GRENIN GEEK STORE
 
-/* ========= GOOGLE FONTS ========= */
-
-/* Vamos importar depois */
-
-/* ========= RESET ========= */
+============================================*/
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* ========= VARIÁVEIS ========= */
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
 
 :root{
 
-    /* Cores */
+    --background:#0F111A;
+    --background2:#171A25;
 
-    --background: #0F111A;
-    --background2: #171A25;
+    --primary:#2D7CFF;
+    --secondary:#7B3FF2;
 
-    --primary: #2D7CFF;
-    --secondary: #7B3FF2;
+    --gold:#F5C242;
 
-    --gold: #F5C242;
+    --white:#FFFFFF;
 
-    --white: #FFFFFF;
+    --text:#E5E7EB;
 
-    --text: #E5E7EB;
-
-    --gray: #9CA3AF;
-
-}
-
-/* ========= CONFIGURAÇÕES GERAIS ========= */
-
-html{
-
-    scroll-behavior: smooth;
+    --gray:#A0A4B3;
 
 }
 
 body{
 
-    background: var(--background);
+    font-family:'Poppins',sans-serif;
 
-    color: var(--text);
+    background:var(--background);
 
-    font-family: Arial, Helvetica, sans-serif;
+    color:var(--text);
 
 }
 
 img{
 
-    display: block;
+    display:block;
 
-    max-width: 100%;
+    max-width:100%;
 
 }
 
 a{
 
-    color: inherit;
+    color:inherit;
 
-    text-decoration: none;
+    text-decoration:none;
 
 }
 
-button{
+ul{
 
-    cursor: pointer;
+    list-style:none;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+/*================ HEADER ================*/
+
+header{
+
+    width:100%;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    background:rgba(15,17,26,.90);
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+    z-index:999;
+
+}
+
+header .container{
+
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.logo img{
+
+    height:65px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:var(--primary);
+
+}
+
+.actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.actions input{
+
+    width:260px;
+
+    height:45px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    padding:0 18px;
+
+    background:var(--background2);
+
+    color:white;
+
+}
+
+.actions button{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.actions button:hover{
+
+    transform:translateY(-3px);
 
 }
